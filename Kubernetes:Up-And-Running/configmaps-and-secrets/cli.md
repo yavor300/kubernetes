@@ -6,5 +6,10 @@ $ kubectl create configmap my-config \
 $ kubectl create secret generic kuard-tls \  
   --from-file=kuard.crt \  
   --from-file=kuard.key  
-**imperative way to create a Secret**
+**imperative way to create a Secret**  
+$ kubectl create secret docker-registry my-image-pull-secret \  
+  --docker-username=<username> \  
+  --docker-password=<password> \  
+  --docker-email=<email-address>  
+**create image pull secret**  
 
