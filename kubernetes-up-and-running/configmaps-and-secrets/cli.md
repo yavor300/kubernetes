@@ -16,6 +16,10 @@ $ kubectl get secret <secret_name> -o yaml **show the secrets values**
 $ kubectl replace -f <filename>  
 $ kubectl apply -f <filename>  
 **update from file**  
+$ kubectl create secret generic kuard-tls \  
+  --from-file=kuard.crt --from-file=kuard.key \  
+  --dry-run -o yaml | kubectl replace -f -  
+**recreate and update**  
 
 
 
