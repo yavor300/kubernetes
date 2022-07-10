@@ -13,5 +13,9 @@ $ kubectl create secret docker-registry my-image-pull-secret \
   --docker-email=<email-address>  
 **create image pull secret**  
 $ kubectl get secret <secret_name> -o yaml **show the secrets values**  
+$ kubectl replace -f <filename>  
+$ kubectl apply -f <filename>  
+**update from file**  
+
 
 
