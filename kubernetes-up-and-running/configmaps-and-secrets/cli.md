@@ -12,4 +12,6 @@ $ kubectl create secret docker-registry my-image-pull-secret \
   --docker-password=<password> \  
   --docker-email=<email-address>  
 **create image pull secret**  
+$ kubectl get secret <secret_name> -o yaml **show the secrets values**  
+
 
